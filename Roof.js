@@ -1,4 +1,4 @@
-class Ground{
+class Roof{
     constructor(x,y,width,height){
         
         var options = {'isStatic':true}
@@ -12,10 +12,11 @@ class Ground{
     display(){
         var pos = this.body.position;
         rectMode(CENTER);
-        stroke("yellow");
-        fill("yellow");
+        stroke("gray");
+        fill("gray");
         rect(pos.x,pos.y,this.width,this.height);
-        noFill();
+        
+
 
     }
 }
