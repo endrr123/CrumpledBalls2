@@ -1,7 +1,7 @@
 class Bob{
     constructor(x,y,radius){
-        var options = {isStatic: false, density: 0.3}
-        this.body = Bodies.circle(x,y,radius/2,options);
+        var options = {isStatic: false, density: 0.5}
+        this.body = Bodies.circle(x,y,radius,options);
         
         this.radius = radius
         World.add(world, this.body)
@@ -14,7 +14,7 @@ class Bob{
         translate(pos.x,pos.y);
         fill("pink");
         stroke("black")
-        ellipseMode(CENTER)
+        ellipseMode(RADIUS)
         ellipse(0,0,this.radius,this.radius)
         
          pop()
